@@ -10,50 +10,64 @@
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 
-<body class="page">
+<body>
+    <div class="page">
 
-    <header class="header">
-        <div class="header__menu">
-            <img class="header__logo" src="images/logo.png" alt="Логотип">
-            <nav class="header__navigation">
-                <ul class="header__links"><a class="header__link" href="#">Главная</a></ul>
-                <ul class="header__links"><a class="header__link" href="#">Отзывы</a></ul>
-                <ul class="header__links"><a class="header__link" href="#">Вопрос-Ответ</a></ul>
-            </nav>
-        </div>
-        <div class="header__contaner">
-            <div class="header__text">
-                <h1 class="header__title">Cистема автоматического пополнение баланса кошелька Steam</h1>
-                <p class="header__subtitle">Надежный сервис для вашего удобства. Отправлем средства буквально через 1-2
-                    минуты.
-                </p>
-                <div class="header__icons">
-                    <img class="header__icon" src="images/plati.svg" alt="Plati.ru">
-                </div>
+        <header class="header">
+            <div class="header__menu">
+                <img class="header__logo" src="images/logo.png" alt="Логотип">
+                <nav class="header__navigation">
+                    <ul class="header__links"><a class="header__link" href="#">Главная</a></ul>
+                    <ul class="header__links"><a class="header__link" href="#">Отзывы</a></ul>
+                    <ul class="header__links"><a class="header__link" href="#">Вопрос-Ответ</a></ul>
+                </nav>
             </div>
-            <img class="header__pic" src="images/Без имени-1.png" alt="">
-        </div>
-    </header>
-
-    <main class="content">
-        <section class="wallet">
-
-            <h2 class="wallet__title">Пополнить баланс Steam</h2>
-            <form class="forms" metod="POST" action="#">
-
-                <div class="forms__container">
-                    <div class="forms__container_data">
-                        <h2 class="forms__container-heading">Данные</h2>
-                        <p class="forms__container-paragraph">Введите свой логин и сумму</p>
-                        <input type="text" value="" name="login" placeholder="Ваш login">
-                        <input type="text" value="" name="summa" placeholder="Сумма">
-                        <button type="submit">Пополнить</button>
+            <div class="header__contaner">
+                <div class="header__text">
+                    <h1 class="header__title">Cистема автоматического пополнение баланса кошелька Steam</h1>
+                    <p class="header__subtitle">Надежный сервис для вашего удобства. Отправлем средства буквально через
+                        1-2
+                        минуты.
+                    </p>
+                    <div class="header__icons">
+                        <img class="header__icon" src="images/plati.svg" alt="Plati.ru">
                     </div>
                 </div>
-            </form>
-        </section>
-    </main>
+                <img class="header__pic" src="images/Без имени-1.png" alt="">
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="wallet">
+                <h2 class="wallet__title">Пополнить баланс Steam</h2>
+                <form class="forms" metod="POST" action="#">
+                    <div class="forms__containers">
+                        <div class="forms__container_input_data">
+                            <h2 class="forms__container-heading">Данные</h2>
+                            <p class="forms__container-paragraph">Введите свой логин и сумму</p>
+                            <div class="forms__input_data_login">
+                                <input class="forms__input" type="text" value="" name="login"
+                                    placeholder="Введите логин">
+                                <img class="forms__input_icon_login" src="images/login.svg" alt="Login">
+                            </div>
+                            <div class="forms__input_data_money">
+                                <input class="forms__input" type="text" value="" name="summa" placeholder="Сумма">
+                                <img class="forms__input_icon_money" src="images/money.svg" alt="Login">
+                            </div>
+
+                            <button class="forms__button" type="submit">Пополнить</button>
+                        </div>
+                        <div class="forms__container_input_metods">
+                            <h2 class="forms__container-heading">Данные</h2>
+                            <p class="forms__container-paragraph">Введите свой логин и сумму</p>
+
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
 
 </body>
+</div>
 
 </html>

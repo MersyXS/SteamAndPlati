@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.header {
+  margin: 0 0 100px 0;
+}
+
 .header__menu {
   height: 40px;
   display: flex;
@@ -65,28 +69,87 @@
 }
 
 .wallet {
-  margin: 100px auto;
+  margin: 0 auto;
+  background-color: #007fff;
+  border-radius: 20px;
+  padding: 40px;
 }
 
 .wallet__title {
   text-align: center;
-}
-
-.forms {
-  border: 1px solid green;
+  margin: 0;
 }
 
 .forms__container {
   box-sizing: border-box;
 }
 
-.forms__container_data {
-  border: 1px solid red;
+.forms__containers {
   width: 40%;
   padding: 50px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.forms__container_data {
+.forms__container_input_data {
   display: flex;
   flex-direction: column;
+}
+
+.forms__container_input_metods {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid yellow;
+}
+
+.wallet__title {
+  color: #fff;
+}
+
+.forms__container-heading {
+  color: #fff;
+}
+
+.forms__container-paragraph {
+  color: #fff;
+}
+
+.forms__input_data_login {
+  position: relative;
+}
+
+.forms__input_data_money {
+  position: relative;
+}
+
+.forms__input {
+  line-height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+  width: 250px;
+  padding-left: 55px;
+}
+
+.forms__input_icon_login {
+  height: 26px;
+  position: absolute;
+  left: 13px;
+  top: calc(50% - 13px);
+}
+
+.forms__input_icon_money {
+  height: 26px;
+  position: absolute;
+  left: 13px;
+  top: calc(50% - 13px);
+}
+
+.forms__button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
 }
