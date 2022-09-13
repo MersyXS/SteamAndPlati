@@ -63,3 +63,30 @@
   display: flex;
   gap: 180px;
 }
+
+.wallet {
+  margin: 100px auto;
+}
+
+.wallet__title {
+  text-align: center;
+}
+
+.forms {
+  border: 1px solid green;
+}
+
+.forms__container {
+  box-sizing: border-box;
+}
+
+.forms__container_data {
+  border: 1px solid red;
+  width: 40%;
+  padding: 50px;
+}
+
+.forms__container_data {
+  display: flex;
+  flex-direction: column;
+}

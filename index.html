@@ -14,7 +14,7 @@
 
     <header class="header">
         <div class="header__menu">
-            <img class="header__logo" src="/images/logo.png" alt="Логотип">
+            <img class="header__logo" src="images/logo.png" alt="Логотип">
             <nav class="header__navigation">
                 <ul class="header__links"><a class="header__link" href="#">Главная</a></ul>
                 <ul class="header__links"><a class="header__link" href="#">Отзывы</a></ul>
@@ -38,8 +38,19 @@
     <main class="content">
         <section class="wallet">
 
-            <h2 class="wallet__title">Пополнить баланс</h2>
+            <h2 class="wallet__title">Пополнить баланс Steam</h2>
+            <form class="forms" metod="POST" action="#">
 
+                <div class="forms__container">
+                    <div class="forms__container_data">
+                        <h2 class="forms__container-heading">Данные</h2>
+                        <p class="forms__container-paragraph">Введите свой логин и сумму</p>
+                        <input type="text" value="" name="login" placeholder="Ваш login">
+                        <input type="text" value="" name="summa" placeholder="Сумма">
+                        <button type="submit">Пополнить</button>
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
 
