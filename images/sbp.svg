@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>IconPay/Spb</title>
+    <g id="IconPay/Spb" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sbp" transform="translate(3.000000, 0.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="#5B57A2" points="0 6.96533333 3.8752 13.892 3.8752 18.1170667 0.00453333333 25.0301333"></polygon>
+            <polygon id="Path" fill="#D90751" points="14.8792 11.3714667 18.5104 9.14586667 25.9418667 9.13893333 14.8792 15.916"></polygon>
+            <polygon id="Path" fill="#FAB718" points="14.8586667 6.92453333 14.8792 16.0952 10.9949333 13.7085333 10.9949333 0 14.8589333 6.92453333"></polygon>
+            <polygon id="Path" fill="#ED6F26" points="25.9418667 9.13893333 18.5101333 9.14586667 14.8586667 6.92453333 10.9949333 0 25.9416 9.13893333"></polygon>
+            <polygon id="Path" fill="#63B22F" points="14.8792 25.0685333 14.8792 20.6192 10.9949333 18.2778667 10.9970667 32"></polygon>
+            <polygon id="Path" fill="#1487C9" points="18.5013333 22.8632 3.87493333 13.892 0 6.96533333 25.9261333 22.8541333 18.5010667 22.8632"></polygon>
+            <polygon id="Path" fill="#017F36" points="10.9973333 32 14.8789333 25.0685333 18.5010667 22.8632 25.9258667 22.8541333"></polygon>
+            <polygon id="Path" fill="#984995" points="0.00453333333 25.0301333 11.0266667 18.2781333 7.32106667 16.0045333 3.8752 18.1170667"></polygon>
+        </g>
+    </g>
+</svg>

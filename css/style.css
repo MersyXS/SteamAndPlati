@@ -72,7 +72,7 @@
   margin: 0 auto;
   background-color: #007fff;
   border-radius: 20px;
-  padding: 40px;
+  padding: 40px 0 60px 0;
 }
 
 .wallet__title {
@@ -86,10 +86,11 @@
 
 .forms__containers {
   width: 40%;
-  padding: 50px;
+  margin-top: 50px;
   display: flex;
   box-sizing: border-box;
   width: 100%;
+  justify-content: space-evenly;
 }
 
 .forms__container_input_data {
@@ -98,9 +99,9 @@
 }
 
 .forms__container_input_metods {
+  width: 600px;
   display: flex;
   flex-direction: column;
-  border: 1px solid yellow;
 }
 
 .wallet__title {
@@ -109,9 +110,25 @@
 
 .forms__container-heading {
   color: #fff;
+  margin: 0;
 }
 
 .forms__container-paragraph {
+  margin: 0;
+  color: #fff;
+}
+
+.forms__container-heading_metods {
+  margin: 0 0 55px 0;
+}
+
+.forms__container-paragraph_data {
+  margin: 10px 0 20px 0;
+  color: #fff;
+}
+
+.forms__container-paragraph_metods {
+  margin: 30px 0 0 0;
   color: #fff;
 }
 
@@ -128,7 +145,8 @@
   border-radius: 10px;
   border: none;
   margin: 10px 0;
-  width: 250px;
+  width: 300px;
+  height: 60px;
   padding-left: 55px;
 }
 
@@ -148,8 +166,43 @@
 
 .forms__button {
   margin-top: 10px;
+  width: 355px;
   border: none;
   border-radius: 5px;
-  height: 35px;
+  height: 40px;
   background-color: rgb(255, 255, 255);
+}
+
+.forms__container_blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.forms__container_block {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 180px;
+  height: 70px;
+  margin: 0 10px 10px 0;
+}
+
+.forms__container_image {
+  height: 50px;
+  margin: 0 auto;
+}
+
+.forms__container_image_cards {
+  height: 70px;
+}
+
+.forms__container_image_ymoney {
+  height: 70px;
+}
+
+.works {
+  margin-top: 50px;
 }
