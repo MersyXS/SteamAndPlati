@@ -75,7 +75,7 @@
   padding: 40px 0 60px 0;
 }
 
-.wallet__title {
+.title {
   text-align: center;
   margin: 0;
 }
@@ -205,4 +205,37 @@
 
 .works {
   margin-top: 50px;
+}
+
+.block__columns {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.block__column {
+  width: 600px;
+  height: 90px;
+  background-color: #007fff;
+  border-radius: 10px;
+  display: flex;
+  column-gap: 15px;
+  margin: 0 auto;
+  margin: 7px auto 7px auto;
+  align-items: center;
+}
+
+.block__paragraph {
+  margin: 7px 0 5px 0;
+  color: #fff;
+}
+
+.block__title {
+  color: #fff;
+  margin: 7px 0 5px 0;
+}
+
+.block__image {
+  height: 30px;
+  margin-left: 10px;
 }
