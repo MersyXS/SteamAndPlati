@@ -2,123 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steam Wallet (RU) - автоматическое пополнение Steam</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
 </head>
 
 <body>
     <div class="page">
-
         <header class="header">
             <div class="header__menu">
-                <img class="header__logo" src="images/logo.png" alt="Логотип">
+                <img class="header__logo" src="images/logo.png" alt="Логотип" />
                 <nav class="header__navigation">
-                    <ul class="header__links"><a class="header__link" href="#">Главная</a></ul>
-                    <ul class="header__links"><a class="header__link" href="#">Отзывы</a></ul>
-                    <ul class="header__links"><a class="header__link" href="#">Вопрос-Ответ</a></ul>
+                    <ul class="header__url">
+                        <li class="header__links">
+                            <a class="header__link" href="#">Главная</a>
+                        </li>
+                        <li class="header__links">
+                            <a class="header__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="header__links">
+                            <a class="header__link" href="#">Вопрос-Ответ</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
             <div class="header__contaner">
                 <div class="header__text">
-                    <h1 class="header__title">Cистема автоматического пополнение баланса кошелька Steam</h1>
-                    <p class="header__subtitle">Надежный сервис для вашего удобства. Отправлем средства буквально через
-                        1-2
-                        минуты.
+                    <h1 class="header__title">
+                        Cистема автоматического пополнение баланса кошелька Steam
+                    </h1>
+                    <p class="header__subtitle">
+                        Надежный сервис для вашего удобства. Отправлем средства буквально
+                        через 1-2 минуты.
                     </p>
                     <div class="header__icons">
-                        <img class="header__icon" src="images/plati.svg" alt="Plati.ru">
+                        <img class="header__icon" src="images/plati.svg" alt="Plati.ru" />
                     </div>
                 </div>
-                <img class="header__pic" src="images/Без имени-1.png" alt="">
+                <img class="header__pic" src="images/dog.png" alt="Dog" />
             </div>
         </header>
 
         <main class="content">
             <section class="wallet">
                 <h2 class="title wallet__title">Пополнить баланс Steam</h2>
-                <form class="forms" metod="POST" action="#">
+                <form action="https://www.digiseller.market/asp2/pay_wm.asp?" class="forms">
                     <div class="forms__containers">
                         <div class="forms__container_input_data">
-                            <h2 class="forms__container-heading forms__container-heading_data">Данные</h2>
-                            <p class="forms__container-paragraph forms__container-paragraph_data">Введите свой логин и
-                                сумму</p>
+                            <h2 class="forms__container-heading forms__container-heading_data">
+                                Данные
+                            </h2>
+                            <p class="forms__container-paragraph forms__container-paragraph_data">
+                                Введите свой логин и сумму
+                            </p>
                             <div class="forms__input_data_login">
-                                <input class="forms__input" type="text" value="" name="login"
-                                    placeholder="Введите логин">
-                                <img class="forms__input_icon_login" src="images/login.svg" alt="Login">
+                                <input class="forms__input" type="text" value="" placeholder=" Введите логин" />
+                                <img class="forms__input_icon_login" src="images/login.svg" alt="Login" />
                             </div>
                             <div class="forms__input_data_money">
-                                <input class="forms__input" type="text" value="" name="summa" placeholder="Сумма">
-                                <img class="forms__input_icon_money" src="images/money.svg" alt="Login">
+                                <input class="forms__input" type="text" placeholder="Сумма" value="" />
+                                <img class="forms__input_icon_money" src="images/money.svg" alt="Login" />
                             </div>
 
-                            <button class="forms__button" type="submit">Пополнить</button>
+                            <a class="forms__button"
+                                href="https://www.digiseller.market/asp2/pay_wm.asp?id_d=3467846&lang=ru-RU">Пополнить</a>
                         </div>
                         <div class="forms__container_input_metods">
-                            <h2 class="forms__container-heading forms__container-heading_metods"">Платежная система</h2>
-                                <div class=" forms__container_blocks">
-                                <div class="forms__container_block">
+                            <h2 class="forms__container-heading forms__container-heading_metods">
+                                Платежная система
+                            </h2>
+                            <div class="forms__container_blocks">
+                                <label for="wallet_cards" class="forms__container_block_label">
+                                    <input class="forms__container_block" type="radio" name="wallet"
+                                        id="wallet_cards" />
                                     <img class="forms__container_image forms__container_image_cards"
-                                        src="images/cards.svg" alt="Cards">
-                                </div>
-                                <div class="forms__container_block">
-                                    <img class="forms__container_image forms__container_image_qiwi"
-                                        src="images/qiwi.svg" alt="Qiwi">
-                                </div>
-                                <div class="forms__container_block">
-                                    <img class="forms__container_image forms__container_image_ymoney"
-                                        src="images/ymoney.svg" alt="Ymoney">
-                                </div>
-                                <div class="forms__container_block">
-                                    <img class="forms__container_image" src="images/qiwi.svg" alt="Qiwi">
-                                </div>
+                                        src="images/cards.svg" alt="Cards" />
+                                </label>
+                            </div>
+
+
+                            <div class="forms__container_blocks">
+                                <label for="wallet_cards" class="forms__container_block_label">
+                                    <input class="forms__container_block" type="radio" name="wallet"
+                                        id="wallet_cards" />
+                                    <img class="forms__container_image forms__container_image_cards"
+                                        src="images/cards.svg" alt="Cards" />
+                                </label>
+                            </div>
+
+
+                            <p class="forms__container-paragraph forms__container-paragraph_metods">
+                                Минимальная сумма для разных платежных систем может отличаться
+                            </p>
                         </div>
-                        <p class=" forms__container-paragraph forms__container-paragraph_metods">Минимальная
-                            сумма
-                            для разных платежных систем может отличаться</p>
                     </div>
+                </form>
+            </section>
+
+            <section class="works">
+                <h2 class="title works__title">Как это работает?</h2>
+                <div class="block__columns">
+                    <div class="block__column">
+                        <img class="block__image" src="images/img_427330.png" alt="" />
+                        <div class="block__text">
+                            <h3 class="block__title">Ввод данных</h3>
+                            <p class="block__paragraph">
+                                Укажите ваш логин от аккаунт и сумму, убедитесь что логин
+                                указан корректно
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block__column">
+                        <img class="block__image" src="images/img_1032.png" alt="" />
+                        <div class="block__text">
+                            <h3 class="block__title">Укажите метот оплаты</h3>
+                            <p class="block__paragraph">
+                                Выбирете удобный для Вас способ оплаты, для некоторых методов
+                                сумма может отличаться
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block__column">
+                        <img class="block__image" src="images/cards.svg" alt="" />
+                        <div class="block__text">
+                            <h3 class="block__title">Ввод данных</h3>
+                            <p class="block__paragraph">
+                                Укажите ваш логин от аккаунт и сумму, убедитесь что логин
+                                указан корректно
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-    </form>
-    </section>
-
-    <section class="works">
-        <h2 class="title works__title">Как это работает?</h2>
-        <div class="block__columns">
-            <div class="block__column">
-                <img class="block__image" src="images/img_427330.png" alt="">
-                <div class="block__text">
-                    <h3 class="block__title">Ввод данных</h3>
-                    <p class="block__paragraph">Укажите ваш логин от аккаунт и сумму, убедитесь что логин указан
-                        корректно</p>
-                </div>
-            </div>
-
-            <div class="block__column">
-                <img class="block__image" src="images/img_1032.png" alt="">
-                <div class="block__text">
-                    <h3 class="block__title">Укажите метот оплаты</h3>
-                    <p class="block__paragraph">Выбирете удобный для Вас способ оплаты, для некоторых методов сумма
-                        может отличаться</p>
-                </div>
-            </div>
-
-            <div class="block__column">
-                <img class="block__image" src="images/cards.svg" alt="">
-                <div class="block__text">
-                    <h3 class="block__title">Ввод данных</h3>
-                    <p class="block__paragraph">Укажите ваш логин от аккаунт и сумму, убедитесь что логин указан
-                        корректно</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-
 </body>
-</div>
 
 </html>

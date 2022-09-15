@@ -22,12 +22,13 @@
   height: 45px;
 }
 
-.header__navigation {
+.header__url {
   display: flex;
   font-size: 16px;
+  column-gap: 30px;
   font-weight: bold;
-  column-gap: 15px;
   align-items: center;
+  list-style: none;
 }
 
 .header__link {
@@ -171,6 +172,11 @@
   border-radius: 5px;
   height: 40px;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
 }
 
 .forms__container_blocks {
@@ -181,6 +187,23 @@
 }
 
 .forms__container_block {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  height: 30px;
+  width: 30px;
+}
+
+.forms__container_block:hover + .forms__container_block_label {
+  background-color: crimson;
+}
+
+.forms__container_block:focus + .forms__container_block_label {
+  background-color: crimson;
+}
+
+.forms__container_block_label {
   background-color: #fff;
   display: flex;
   align-items: center;
