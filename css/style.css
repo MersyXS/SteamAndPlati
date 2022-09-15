@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .page {
   min-width: 1100px;
   max-width: 1300px;
@@ -179,6 +191,21 @@
   color: black;
 }
 
+.forms__button:link,
+.forms__button:visited {
+  transition: all 0.2s;
+}
+
+.forms__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.forms__button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .forms__container_blocks {
   width: 100%;
   display: flex;
@@ -187,23 +214,22 @@
 }
 
 .forms__container_block {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  height: 30px;
-  width: 30px;
+  display: none;
 }
 
-.forms__container_block:hover + .forms__container_block_label {
-  background-color: crimson;
+.forms__container_block_label:hover {
+  background-color: #0d4876;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.forms__container_block:focus + .forms__container_block_label {
-  background-color: crimson;
+.forms__containers input:checked + label {
+  background-color: #00000075;
+  border-color: #fff;
 }
 
 .forms__container_block_label {
+  border: 1px solid #0d487600;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -213,13 +239,9 @@
   margin: 0 10px 10px 0;
 }
 
-.forms__container_image {
-  height: 50px;
-  margin: 0 auto;
-}
-
 .forms__container_image_cards {
-  height: 70px;
+  height: 60px;
+  margin: 0 auto;
 }
 
 .forms__container_image_ymoney {
